@@ -142,16 +142,7 @@ class Holiday_List:
         # Make sure holidayObj is an Holiday Object by checking the type
         # Use innerHolidays.append(holidayObj) to add holiday
         # print to the user that you added a holiday
-
-    def find_holiday(self, holidayName, date):
-        for i in self.inner_holidays:
-            inner_holidays_dict = self.inner_holidays[i].__dict__
-            if holidayName == inner_holidays_dict['name'] and date == inner_holidays_dict['date']:
-                return f"{inner_holidays_dict['name']} {inner_holidays_dict['date']}"
-
-        # Find Holiday in innerHolidays
-        # Return Holiday
-
+        
     def remove_holiday(self, holidayName, date):
         global changes
         for i in self.inner_holidays:
